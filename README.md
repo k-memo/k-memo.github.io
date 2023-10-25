@@ -1,2 +1,2 @@
-# memo.github.io
-Personal website
+# k-memo.github.io
+Personal Website with Github Pages
