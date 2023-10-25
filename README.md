@@ -1,2 +1,2 @@
-# memok.gitbhub.io
+# memo.github.io
 Personal website
