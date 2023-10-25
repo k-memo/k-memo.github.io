@@ -1,0 +1,103 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#about .stack-bar {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+#about .stack-bar svg {
+  height: 3rem;
+}
+
+#about h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+#cv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+}
+
+#cv a:hover {
+  text-decoration: underline;
+}
+
+#cv h3 {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+#cv h4 {
+  font-size: 1rem;
+}
+
+#cv span,
+#cv p,
+#cv a {
+  font-size: 1rem;
+}
+
+#cv-myself {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#about-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 2rem;
+}
+
+.myself-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.myself-info svg {
+  width: 1rem;
+}
+
+#about-image-container img {
+  scale: 1;
+  position: absolute;
+  height: 30rem;
+  left: -100px;
+  filter: saturate(0);
+}
+
+#cv .subheading {
+  font-size: 1rem;
+}
+.apart {
+  display: flex;
+  justify-content: space-between;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

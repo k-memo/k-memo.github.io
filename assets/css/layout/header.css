@@ -1,0 +1,47 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+#header-logo svg {
+  height: 3rem;
+}
+
+#header-logo {
+  display: flex;
+  align-items: center;
+}
+header nav {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: auto;
+}
+
+header nav ul li {
+  display: block;
+  align-items: center;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}

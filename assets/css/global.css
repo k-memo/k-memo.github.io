@@ -1,3 +1,53 @@
 body {
-  font-family: "Consolas" monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin: auto;
+  font-family: "Consolas", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.button-big {
+  background-color: black;
+  width: fit-content;
+  color: white;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.1s;
+}
+
+a.button-small {
+  background-color: black;
+  width: fit-content;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.1s;
+}
+
+a.button-big:hover,
+a.button-small:hover {
+  scale: 1.1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gray {
+  color: #808080;
+}
+
+.light {
+  font-weight: normal !important;
+}
+
+.bold {
+  font-weight: bold !important;
 }

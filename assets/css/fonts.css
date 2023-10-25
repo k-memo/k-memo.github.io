@@ -1,13 +1,12 @@
 @font-face {
   font-family: "Consolas";
-  src: url("../fonts/Consolas.woff") format("woff"); /* Replace 'path-to-consolas-regular.woff' with the actual file path */
-  font-weight: normal;
+  src: url("../fonts/Consolas.woff") format("woff");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Consolas";
-  src: url("../fonts/Consolas-Bold.woff") format("woff"); /* Replace 'path-to-consolas-bold.woff' with the actual file path */
+  src: url("../fonts/Consolas-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }

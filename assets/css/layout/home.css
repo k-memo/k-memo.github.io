@@ -1,0 +1,40 @@
+#home {
+  display: flex;
+  justify-content: space-between;
+}
+
+#herotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#herotext p,
+#herotext h2 {
+  font-weight: bold;
+}
+#herotext p,
+#herotext a {
+  font-size: 1.3rem;
+}
+
+#herotext h2 {
+  font-size: 2rem;
+}
+
+#heroimage-container {
+  position: relative;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+}
+
+#heroimage-container img {
+  scale: 1.2;
+  position: absolute;
+  height: 20rem;
+  left: -80px;
+  filter: saturate(0);
+}
