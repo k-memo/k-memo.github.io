@@ -53,13 +53,18 @@ html {
 }
 
 .desktop-invisible {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 768px) {
   body {
     gap: 3rem;
   }
+
+  .desktop-invisible {
+    display: flex !important;
+  }
+
   .mobile-invisible {
     display: none;
   }
