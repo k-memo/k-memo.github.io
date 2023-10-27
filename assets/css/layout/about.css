@@ -102,3 +102,23 @@
   flex-direction: column;
   gap: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .mobile-invisible {
+    display: none;
+  }
+
+  #cv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cv-myself {
+    order: -1;
+  }
+
+  #about-image-container {
+    order: -2;
+    width: 100%;
+  }
+}

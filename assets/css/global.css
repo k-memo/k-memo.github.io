@@ -51,3 +51,18 @@ html {
 .bold {
   font-weight: bold !important;
 }
+
+.desktop-invisible {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-invisible {
+    display: none;
+  }
+
+  a.button-big {
+    width: auto;
+    text-align: center;
+  }
+}

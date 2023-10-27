@@ -45,3 +45,113 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Move the dropdown to the right */
+  }
+
+  .hamburger {
+    position: relative;
+    height: 45px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+  }
+
+  .hamburger div {
+    background-color: black;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #meat {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  #drop-toggle {
+    display: none;
+  }
+
+  #drop-toggle:checked + .hamburger .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+
+  #drop-toggle:checked + .hamburger .meat {
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #drop-toggle:checked ~ .dropdown {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* Menu */
+  .dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px; /* Change width to 0px */
+    height: 100vh;
+    background-color: #ea1414;
+    color: white;
+    margin: 0;
+    display: -ms-grid;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
+    padding-top: 5rem;
+    list-style: none;
+    clear: both;
+    height: auto; /* Change height to auto */
+    text-align: center;
+    overflow: hidden;
+    transition: width 0.4s ease; /* Change height to width */
+    z-index: 110;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown a:first-child {
+    margin-top: 40px;
+  }
+
+  .dropdown a:last-child {
+    margin-bottom: 40px;
+  }
+
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px "Oswald", sans-serif;
+  }
+
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
