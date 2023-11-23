@@ -4,14 +4,14 @@
   gap: 4rem;
 }
 
-#about .stack-bar {
+.stack-bar {
   display: flex;
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
 }
 
-#about .stack-bar svg {
+.stack-bar svg {
   height: 3rem;
 }
 
@@ -30,12 +30,12 @@
   text-decoration: underline;
 }
 
-#cv h3 {
+#about h3 {
   text-decoration: underline;
   font-size: 1.2rem;
 }
 
-#cv h4 {
+#about h4 {
   font-size: 1rem;
 }
 
@@ -120,5 +120,9 @@
   #about-image-container {
     order: -2;
     width: 100%;
+  }
+
+  #about > h4 {
+    margin-left: 0;
   }
 }
