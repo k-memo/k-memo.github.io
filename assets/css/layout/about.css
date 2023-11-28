@@ -20,6 +20,11 @@
   text-decoration: underline;
 }
 
+#about > p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
 #cv {
   display: grid;
   grid-template-columns: auto 1fr;
