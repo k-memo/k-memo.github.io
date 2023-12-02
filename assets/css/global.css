@@ -16,7 +16,7 @@ a {
 }
 
 a.button-big {
-  background-color: black;
+  background-color: #ea1414;
   width: fit-content;
   color: white;
   padding: 0.5rem;
@@ -27,7 +27,7 @@ a.button-big {
 }
 
 a.button-small {
-  background-color: black;
+  background-color: #ea1414;
   width: fit-content;
   color: white;
   padding: 0.5rem;

@@ -40,12 +40,6 @@
   filter: saturate(0);
 }
 
-.apart p {
-  background-color: black;
-  color: white;
-  width: fit-content;
-}
-
 @media screen and (max-width: 768px) {
   #home {
     width: 100%;

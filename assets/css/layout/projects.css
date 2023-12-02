@@ -8,3 +8,75 @@
   font-size: 2rem;
   text-decoration: underline;
 }
+
+.list-item {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.list-item .item-header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+.list-item li {
+  border-top: 2px solid black;
+}
+
+.list-item li:last-child {
+  border-bottom: 2px solid black;
+}
+
+.list-item .item-header:hover {
+  background-color: #ea1414;
+  color: white;
+}
+
+.list-item .item-header:hover > svg {
+  fill: white;
+}
+
+.list-item .item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.list-item .item-content > *:first-child {
+  padding-top: 1rem;
+}
+
+.list-item .item-content > *:last-child {
+  padding-bottom: 1rem;
+}
+
+.list-item .item-content.active {
+  max-height: 800px;
+}
+
+.collapseIcon {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+
+.collapsed {
+  transform: rotate(0deg);
+}
+
+.pagelet {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
