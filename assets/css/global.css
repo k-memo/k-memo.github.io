@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-margin-top: 5rem;
 }
 
 body {
@@ -61,6 +62,10 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    scroll-margin-top: 4rem;
+  }
+
   body {
     gap: 3rem;
   }
