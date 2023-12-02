@@ -29,10 +29,12 @@ function toggleContent(element) {
   content.classList.toggle("active");
 
   if (content.classList.contains("active")) {
+    let blockProperty = window.innerWidth <= 600 ? "start" : "center";
+
     setTimeout(() => {
       content.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: blockProperty,
       });
     }, 500);
   }
