@@ -123,9 +123,12 @@
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <ul class="list-item">
-          <li>
-            <div class="item-header" onclick="toggleContent(this)">
+        <ul class="project-list">
+          <li class="list-item">
+            <div
+              class="item-header"
+              onclick="toggleContent(this.parentElement)"
+            >
               <svg
                 class="collapseIcon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -175,8 +178,11 @@
               </div>
             </div>
           </li>
-          <li>
-            <div class="item-header" onclick="toggleContent(this)">
+          <li class="list-item">
+            <div
+              class="item-header"
+              onclick="toggleContent(this.parentElement)"
+            >
               <svg
                 class="collapseIcon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +239,6 @@
               </div>
             </div>
           </li>
-          <!-- Add more items as needed -->
         </ul>
       </section>
       <section id="about">

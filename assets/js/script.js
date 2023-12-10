@@ -10,29 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function toggleContent(element) {
-  let collapseIcon = element.querySelector("svg");
+function toggleContent(listItem) {
+  let collapseIcon = listItem.querySelector(".item-header > .collapseIcon");
 
   // Select all content elements
-  let allContents = document.querySelectorAll(".item-content");
+  let allItems = document.querySelectorAll(".list-item");
 
-  allContents.forEach((item) => {
-    if (item !== element.nextElementSibling) {
+  allItems.forEach((item) => {
+    if (item !== listItem) {
       item.classList.remove("active");
     }
   });
 
-  // Collapse active content and move the view
-  let content = element.nextElementSibling;
+  listItem.classList.toggle("active");
 
-  collapseIcon.classList.toggle("collapsed");
-  content.classList.toggle("active");
-
-  if (content.classList.contains("active")) {
+  if (listItem.classList.contains("active")) {
     let blockProperty = window.innerWidth <= 600 ? "start" : "center";
 
     setTimeout(() => {
-      content.scrollIntoView({
+      listItem.scrollIntoView({
         behavior: "smooth",
         block: blockProperty,
       });
